@@ -1,11 +1,55 @@
 @use '../util' as *;
+// source = https://codepen.io/SaraSoueidan/pen/jpBbrq/?editors=1100
 
 .toggle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: none;
+    
+    label {
+        text-align: center;
+        &[for="dark"]{
+            grid-column: 1 / 2;
+        }
+        &[for="system"]{
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        &[for="light"]{
+            grid-column: 3 / 4;
+        }
+    }
+    &__wrapper {
+        height: rem(24);
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        position: relative;
+    }
 
+    input[type='radio']{
+        opacity: 0;
+    }
+
+    &__background {
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        border-radius: rem(12);
+        overflow: hidden;
+        background: linear-gradient(
+            225deg, 
+            var(--Toggle-bg-Start) 0%,
+            var(--Toggle-bg-End) 98.02%
+            );
+    }
+    
     &__button {
         width: rem(16);
         height: rem(16);
         border-radius: 50%;
         background-color: var(--toggle);
     }
+
 }
