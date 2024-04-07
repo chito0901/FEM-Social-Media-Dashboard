@@ -30,9 +30,6 @@
     </div>
     
     <fieldset class="header__toggle toggle" aria-label="theme toggle" role="radiogroup">
-      <label for="dark">Dark</label>
-      <label for="system">System</label>
-      <label for="light">Light</label>
       <div class="toggle__wrapper">
         <input type="radio" name="theme" id="dark">
         <input type="radio" name="theme" id="system" checked>
@@ -40,31 +37,78 @@
         <span aria-hidden="true" class="toggle__background"></span>
         <span aria-hidden="true" class="toggle__button"></span>
       </div>
+      <label for="dark">Dark</label>
+      <label for="system">System</label>
+      <label for="light">Light</label>
     </fieldset>
 
   </header>  
   
   <main>
-    <section>
-      @nathanf
-      1987
-      Followers
-      12 Today
+    <section class="container">
+      
+      <div class="card">
+        <div class="card__platform">
+          <div class="card__icon">
+            <img src="images/icon-facebook.svg" alt="facebook logo"></div>
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__followers">
+          <div class="card__count card__count--big">1987</div>
+            <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change card__change--up">
+          <img src="/images/icon-up.svg"> 12 Today</div>
+      </div>
+      
+      
+      
+      
+      <div class="card">
+        <div class="card__platform">
+          <div class="card__icon">
+            <img src="images/icon-twitter.svg" alt="twitter logo">
+          </div>
+          <div class="card__username">@nathanf</div>
+        </div>
+        <div class="card__count card__count--big">
+          1044
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change">99 Today</div>
+      </div>
+      
+      
+      
+      
+      <div class="card">
+        <div class="card__platform">
+          <div class="card__icon">
+            <img src="images/icon-instagram.svg" alt="instagram logo">
+          </div>
+          <div class="card__username">@realnathanf</div>
+        </div>
+        <div class="card__count card__count--big">
+          11k
+          <div class="card__label">Followers</div>
+        </div>
+        <div class="card__change">1099 Today</div>
+      </div>
 
-      @nathanf
-      1044
-      Followers
-      99 Today
+      <div class="card">
+        <div class="card__platform">
+          <div class="card__icon">
+            <img src="images/icon-youtube.svg" alt="youtube logo">
+          </div>
+          <div class="card__username">Nathan F.</div>
+        </div>
+        <div class="card__count card__count--big">
+          8239
+          <div class="card__label">Subscribers</div>
+        </div>
+        <div class="card__change">144 Today</div>
+      </div>
 
-      @realnathanf
-      11k
-      Followers
-      1099 Today
-
-      Nathan F.
-      8239
-      Subscribers
-      144 Today
     </section>
 
     <section>
